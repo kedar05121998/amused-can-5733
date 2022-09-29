@@ -6,6 +6,7 @@ import LatestNews from '../Pages/LatestNews'
 import Polictics from '../Pages/Polictics'
 import Sports from '../Pages/Sports'
 import Trending from '../Pages/Trending'
+import Photos from '../Pages/Photos'
 function AllRoutes() {
   return (
     <div>
@@ -17,6 +18,7 @@ function AllRoutes() {
           <Route  path="/Politics" element={<Polictics/>} />
           <Route path="/Sports" element={<Sports/>}  />
           <Route path="/Trending" element={<Trending/>} />
+          <Route path="/photos" element={<Photos/>} />
 
 
         </Routes>

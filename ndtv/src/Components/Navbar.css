@@ -33,3 +33,35 @@
     justify-content: space-around;
     text-decoration-color: #eaeaea;
 }
+.navbar_lower_tab{
+    display: flex;
+    width: 80%;
+    justify-content: space-around;
+    font-size: 13px;
+    font-weight: 700;
+    color: #fff;
+    padding: 3px 0;
+    margin: 0 12px;
+    line-height: 15px;
+    letter-spacing: .9px;
+   
+}
+.navbar_lower_tab>p{
+    cursor: pointer;
+}
+p:hover{
+    text-decoration: underline;
+}
+
+.navbar_icons{
+    width: 20%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+.navbar_icons>div{
+    cursor: pointer;
+}
+
+
+
