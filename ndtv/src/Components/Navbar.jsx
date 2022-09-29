@@ -1,8 +1,16 @@
 import React from 'react'
 
-import {  Link} from 'react-router-dom'
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+// import { faFacebook } from "@fortawesome/free-brands-svg-icons"
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { FaFacebookSquare,FaEllipsisH, FaTwitterSquare, FaBell, FaSearch } from "react-icons/fa";
+
+
+
+import {  Link, useNavigate} from 'react-router-dom'
 import "./Navbar.css"
 function Navbar() {
+    const navigate=useNavigate()
     
   return (
       <div className='navbar_main' >
@@ -24,23 +32,54 @@ function Navbar() {
       <p  href="https://www.ndtv.com/shopping#pfrom=home-ndtv_header-globalnav" >SHOPPING</p>
       <p href="https://www.mojarto.com/#pfrom=home-ndtv_header-globalnav" >ART</p>
      </div>
-<div className='navbar_lower' >
-    <div style={{width:"15%"}} >
+<div  className="navbar_lower">
+    <div className='navbar_lower_img' style={{width:"10%"}} >
 <Link to="/" > <img src='https://drop.ndtv.com/homepage/images/ndtvlogo22.svg' alt="logo" /></Link>
     </div> 
-  
- <Link to="/" >HOME</Link>
-<Link to="/latestNews" >LATEST NEWS</Link>
-<Link to="/politics" >POLITICS</Link>
-<Link to="/sports" >SPORTS</Link>
-<Link to="/trending" >TRENDING</Link>
+  <div className="navbar_lower_tab" >
+<p onClick={()=>navigate("/")} > HOME </p> 
+<p onClick={()=>navigate("/latestNews")} >LATEST NEWS</p>
+<p onClick={()=>navigate("/politics")} >POLITICS</p>
+<p onClick={()=>navigate("/sports")} >SPORTS</p>
+<p onClick={()=>navigate("/trending")} >TRENDING</p>
+<p onClick={()=>navigate("/photos")} >PHOTOS</p>
 
+
+{/*-------some Code---------*/}
+
+{/* <FontAwesomeIcon icon={['fab', 'twitter']} /> */}
+<div className="navbar_icons" >
+  <div  >
+  <FaEllipsisH style={{height:"20px",width:"20px"}} />
+  </div>
+
+  <div>
+  <FaFacebookSquare style={{height:"20px",width:"20px"}} />
+  </div>
+
+  <div>
+  <FaTwitterSquare style={{height:"20px",width:"20px"}} />
+  </div>
+
+  <div>
+  <FaBell style={{height:"20px",width:"20px"}} />
+  </div>
+
+<div>
+<FaSearch style={{height:"20px",width:"20px"}} />
+</div>
 
 
 
 </div>
 
+</div>
+
+
+</div>
+
     </div>
+  
   )
 }
 
