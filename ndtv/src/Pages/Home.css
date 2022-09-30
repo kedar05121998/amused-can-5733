@@ -1,0 +1,28 @@
+
+.sideMenu{
+   display: grid;
+   grid-template-rows: repeat(300px,1fr);
+   grid-template-columns: repeat(2,1fr);
+   gap: 10px;
+padding: 50px 0px 10px 10px;
+   
+    height: auto;
+    width: 25%;
+  border: 1px solid red;
+  margin-top: -50px;
+    margin-left: 50px;
+    background-color: white;
+   
+}
+.img_thumbnail{
+    height: 100px;
+    width: 100px;
+
+    /* border: 1px solid black; */
+  
+}
+.tittle>p{
+ /* margin-left: 20px; */
+ width: 100%;
+
+}
