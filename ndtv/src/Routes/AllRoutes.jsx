@@ -5,9 +5,11 @@ import Home from '../Pages/Home'
 import LatestNews from '../Pages/LatestNews'
 import Polictics from '../Pages/Polictics'
 import Sports from '../Pages/Sports'
-import Trending from '../Pages/Trending'
+import Trending from '../Pages/WorldNews'
 import Photos from '../Pages/Photos'
 import DetailNews from '../Pages/DetailNews'
+import CityPage from '../Pages/CityPage'
+import WorldNews from '../Pages/WorldNews'
 function AllRoutes() {
   return (
     <div>
@@ -18,7 +20,8 @@ function AllRoutes() {
           <Route path="/latestNews" element={<LatestNews/>}/>
           <Route  path="/Politics" element={<Polictics/>} />
           <Route path="/Sports" element={<Sports/>}  />
-          <Route path="/Trending" element={<Trending/>} />
+          <Route path="/cityPage" element={<CityPage/>}/>
+          <Route path="/world" element={<WorldNews/>} />
           <Route path="/photos" element={<Photos/>} />
           <Route path="/detailNews/:q" element={<DetailNews/>}/>
 
