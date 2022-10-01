@@ -51,7 +51,7 @@
     cursor: pointer;
 }
 p:hover{
-    text-decoration: underline;
+    /* text-decoration: underline; */
 }
 
 .navbar_icons{

@@ -1,20 +1,20 @@
 import { useState } from "react";
 import { useEffect } from "react";
 
-import styles from "../PagesStyle/Politics.module.css"
+import styles from "../PagesStyle/City.module.css"
 import FooterPage from "../Components/Footer/Footer"
 
 
 import axios from "axios";
 
 
-function Photos(){
+function CityPage(){
     const [data,setData] = useState();
  
 
     useEffect(()=>{
      
-        axios.get(`https://newsapi.org/v2/everything?q=photos&from=2022-09-29&sortBy=popularity&apiKey=3fe9213425f944a998419878ca24780b&pageSize=30`)
+        axios.get(`https://newsapi.org/v2/everything?q=mumbai&from=2022-09-29&sortBy=popularity&apiKey=3fe9213425f944a998419878ca24780b&pageSize=30`)
         .then((res)=>{
             // console.log(res.data.news[0].articles)
             setData(res.data.articles)
@@ -36,8 +36,8 @@ function Photos(){
                     data?.map((ele)=>(
                         <div key={ele.headline} >
                             <img style={{height:"200px",width:"200px"}} src={ele.urlToImage} className={styles.img} alt="" />
-                            {/* <h2><span className={styles.span}>TITLE: </span>{ele.title}</h2>
-                            <p><span className={styles.span} >DESCRIPTION: </span>{ele.description}</p> */}
+                            <h2><span className={styles.span}>TITLE: </span>{ele.title}</h2>
+                            <p><span className={styles.span} >DESCRIPTION: </span>{ele.description}</p>
                          
                         </div>
                     ))
@@ -51,8 +51,4 @@ function Photos(){
     )
 }
 
-
-
-
-
-export default Photos;
+export default CityPage;
