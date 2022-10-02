@@ -42,6 +42,7 @@ function Navbar() {
 <p onClick={()=>navigate("/politics")} >POLITICS</p>
 <p onClick={()=>navigate("/cityPage")} >CITIES</p>
 <p onClick={()=>navigate("/sports")} >SPORTS</p>
+<p onClick={()=>navigate("/covid")} >COVID</p>
 <p onClick={()=>navigate("/world")} >WORLD NEWS</p>
 <p onClick={()=>navigate("/photos")} >PHOTOS</p>
 
