@@ -15,7 +15,7 @@ function DetailNews() {
     console.log(state)
 
     useEffect(()=>{
-      axios.get(`https://newsapi.org/v2/everything?q=${state}&apiKey=3fe9213425f944a998419878ca24780b`)
+      axios.get(`https://newsapi.org/v2/everything?q=${state}&apiKey=27532f5e99e948da97e7b6d6f30a4302`)
       .then((res)=>{setData(res.data.articles[0])})
         
     },[state])

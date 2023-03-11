@@ -9,7 +9,7 @@ import FooterPage from '../Components/Footer/Footer'
 
 
 const getTopNews=()=>{
- return axios.get("https://newsapi.org/v2/everything?q=india&from=2022-09-29&sortBy=popularity&apiKey=3fe9213425f944a998419878ca24780b&pageSize=30")
+ return axios.get("https://newsapi.org/v2/everything?q=tesla&from=2023-02-11&sortBy=publishedAt&apiKey=27532f5e99e948da97e7b6d6f30a4302&pageSize=30")
 }
 
 function Home() {
@@ -35,7 +35,7 @@ function Home() {
 
   useEffect(()=>{
    
-    axios.get(`https://newsapi.org/v2/everything?q=tesla&apiKey=3fe9213425f944a998419878ca24780b`)
+    axios.get(`https://newsapi.org/v2/everything?q=tesla&from=2023-02-11&sortBy=publishedAt&apiKey=27532f5e99e948da97e7b6d6f30a4302`)
     .then((res)=>{
         // console.log(res.data.articles)
         setData(res.data.articles)

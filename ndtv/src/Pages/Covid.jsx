@@ -13,8 +13,8 @@ function Covid(){
  
 
     useEffect(()=>{
-     
-        axios.get(`https://newsapi.org/v2/everything?q=covid&from=2022-09-29&sortBy=popularity&apiKey=3fe9213425f944a998419878ca24780b&pageSize=30`)
+        //https://newsapi.org/v2/everything?q=covid&from=2022-09-29&sortBy=popularity&apiKey=27532f5e99e948da97e7b6d6f30a4302&pageSize=30`
+        axios.get(`https://newsapi.org/v2/everything?q=covid&from=2023-02-10&sortBy=publishedAt&apiKey=27532f5e99e948da97e7b6d6f30a4302&pageSize=30`)
         .then((res)=>{
           
             setData(res.data.articles)
