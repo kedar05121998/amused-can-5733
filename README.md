@@ -1,1 +1,1 @@
-# amused-can-5733
+NDTV was founded in 1984, by economist Prannoy Roy and journalist Radhika Roy, a husband and wife duo from the city of Kolkata. It began as a production house for news segments, contracted by the public broadcaster Doordarshan and international satellite channels when television broadcasting was a state monopoly, and transitioned into the first independent news network in India. The company launched the first 24x7 news channel in partnership with Star India in 1998.
