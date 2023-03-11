@@ -20,7 +20,9 @@ _To start with the Project run the following command in terminal
         
 
 
- Note:-The Api I used for this project is not accessible after deployment.
+ Note:-
+ 
+The Api I used for this project is not accessible after deployment.
 If you want to see live project visit to this - **[Link](https://drive.google.com/file/d/18gQ-XBkmY3rJsDPJPA6H0WiH7iRjFGSG/view)**
 
 ## Tech Stack Used : -
